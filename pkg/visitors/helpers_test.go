@@ -16,6 +16,7 @@ import (
 // This GUID exists somewhere in the OVMF image.
 var testGUID = guid.MustParse("DF1CCEF6-F301-4A63-9661-FC6030DCC880")
 var dxeCoreGUID = guid.MustParse("D6A2CB7F-6A18-4E2F-B43B-9920A733700A")
+var testRawGUID = guid.MustParse("1BA0062E-C779-4582-8566-336AE8F78F09")
 
 func parseImage(t *testing.T) uefi.Firmware {
 	image, err := ioutil.ReadFile("../../integration/roms/OVMF.rom")
